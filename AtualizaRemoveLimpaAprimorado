@@ -1,0 +1,29 @@
+
+
+Crie um arquivo de script, tipo:
+
+nano limpar_memoria.sh
+
+dentro do arquivo digita o script:
+
+
+#!/bin/bash
+# Script para limpar a memória RAM
+
+echo "Limpando a memória cache..."
+sync
+sudo sysctl -w vm.drop_caches=3
+echo "Memória limpa com sucesso!"
+
+
+Salva (Ctrl+O, Enter) e fecha (Ctrl+X).
+
+
+Depois dá permissão para o script ser executável:
+chmod +x limpar_memoria.sh
+
+
+Agora, toda vez que quiser limpar a RAM, é só rodar:
+
+./limpar_memoria.sh
+

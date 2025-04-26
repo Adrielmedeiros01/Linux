@@ -1,0 +1,8 @@
+
+# Para saber a posição do mouse em tempo real
+
+sudo apt install xdotool
+
+em seguida,
+
+watch -n 1.0 xdotool getmouselocation
